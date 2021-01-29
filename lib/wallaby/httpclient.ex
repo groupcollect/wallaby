@@ -11,8 +11,8 @@ defmodule Wallaby.HTTPClient do
   @type web_driver_error_reason :: :stale_reference | :invalid_selector | :unexpected_alert
 
   @status_obscured 13
-  # The maximum time we'll sleep is for 50ms
-  @max_jitter 500
+  # The maximum time we'll sleep is for 5s
+  @max_jitter 5000
 
   @doc """
   Sends a request to the webdriver API and parses the
