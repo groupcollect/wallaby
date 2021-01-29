@@ -12,7 +12,7 @@ defmodule Wallaby.HTTPClient do
 
   @status_obscured 13
   # The maximum time we'll sleep is for 50ms
-  @max_jitter 50
+  @max_jitter 500
 
   @doc """
   Sends a request to the webdriver API and parses the
